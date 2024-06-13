@@ -29,4 +29,4 @@ jobs:
         pip install selenium
     - name: Test with pytest
       run: |
-        Selenium_tests/login_test.py
+        python login_test.py
