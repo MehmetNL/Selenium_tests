@@ -20,6 +20,7 @@ base_url = "https://demo.playground-crm.com"
 username = "admin"
 password = "admin"
 
+
 #### Begin test ####
 driver = webdriver.Chrome()
 driver.get(base_url)
