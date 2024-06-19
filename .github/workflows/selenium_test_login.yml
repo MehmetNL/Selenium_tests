@@ -28,6 +28,13 @@ jobs:
         python -m pip install --upgrade pip
         pip install selenium
         pip install webdriver_manager
+    - name: Install ChromeDriver
+        uses: nanasess/setup-chromedriver@v2
+    - name: Set up virtual display
+        run: |
+          export DISPLAY=:99
+          sudo Xvfb :99 -screen 0 1280x1024x24 +extension RANDR &
+
     - name: Test with pytest
       run: |
         python login_test.py
