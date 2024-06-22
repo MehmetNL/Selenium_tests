@@ -44,4 +44,4 @@ jobs:
       if: always() # De testlogboeken moeten altijd worden geüpload, ongeacht de uitkomst van de testen
       with:
           name: log
-          path: /home/runner/work/Selenium_tests
+          path: /home/runner/work/Selenium_tests/
