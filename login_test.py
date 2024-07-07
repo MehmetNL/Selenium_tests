@@ -37,6 +37,5 @@ controlleer_login = driver.find_element(By.XPATH,"//*[@id='header']/nav/div/ul/l
 print(controlleer_login)
 assert controlleer_login == "Ger personal account for free", f"Controlle tekst {controlleer_login} komt NIET overeen met Get personal account for free"
 
-
 time.sleep(2)
 
